@@ -45,3 +45,31 @@
       filter: hue-rotate(360deg);
     }
   }
+
+  /* Responsive styles for mobile */
+  @media (max-width: 700px) {
+    .container {
+      flex-direction: column;
+      min-height: unset;
+      width: 100vw;
+      padding: 16px 0;
+    }
+    #instagram,
+    #twitter,
+    #github,
+    #whatsapp {
+      font-size: 3em;
+      margin: 12px 0;
+      padding: 8px 10px;
+    }
+  }
+
+  @media (max-width: 400px) {
+    #instagram,
+    #twitter,
+    #github,
+    #whatsapp {
+      font-size: 2em;
+      padding: 6px 6px;
+    }
+  }

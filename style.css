@@ -285,3 +285,32 @@ footer.footer span {
     padding: 24px 8px;
   }
 }
+/* Responsive styles for mobile - apply to all pages */
+@media (max-width: 700px) {
+  .container {
+    flex-direction: column;
+    min-height: unset;
+    width: 100vw;
+    padding: 16px 0;
+  }
+  .social-icon,
+  #instagram,
+  #twitter,
+  #github,
+  #whatsapp {
+    font-size: 3em !important;
+    margin: 12px 0 !important;
+    padding: 8px 10px !important;
+  }
+}
+
+@media (max-width: 400px) {
+  .social-icon,
+  #instagram,
+  #twitter,
+  #github,
+  #whatsapp {
+    font-size: 2em !important;
+    padding: 6px 6px !important;
+  }
+}
