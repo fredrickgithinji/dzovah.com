@@ -1,13 +1,10 @@
 // Dzovah main.js
 // Dynamically load inspiration images into the gallery
 const galleryImages = [
-  'Branding/ref/t1.jpeg',
-  'Branding/ref/t2.png',
-  'Branding/ref/t3.png',
   'Branding/ref/t4.jpeg',
   'Branding/ref/t5.jpeg',
   'Branding/ref/t6.jpeg',
-  'Branding/ref/t7.jpeg'
+  
 ];
 
 window.addEventListener('DOMContentLoaded', () => {
