@@ -39,7 +39,7 @@
     <section id="hero" class="hero">
       <h1>Make It Happen.</h1>
       <p class="subtitle">Empowering creators, builders, and explorers to shape the world with their ideas.</p>
-      <button class="primary">Explore Dzovah</button>
+      <button class="primary" id="exploreDzovahBtn">Explore Dzovah</button>
     </section>
     <section id="gallery" class="gallery">
       <h2>Inspiration Gallery</h2>
@@ -69,6 +69,13 @@
     hamburgerBtn.addEventListener('click', () => {
       mobileNav.classList.toggle('open');
     });
+    // Explore Dzovah button click handler
+    const exploreDzovahBtn = document.getElementById('exploreDzovahBtn');
+    if (exploreDzovahBtn) {
+      exploreDzovahBtn.addEventListener('click', function() {
+        window.location.href = 'what/index.html';
+      });
+    }
   </script>
   <script src="main.js"></script>
 </body>
