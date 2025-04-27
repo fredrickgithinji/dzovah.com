@@ -405,6 +405,17 @@ footer.footer span {
   color: #ffb6b6;
 }
 
+/* Blur effect for main content when mobile nav is active */
+.blur-overlay {
+  filter: blur(7px) brightness(0.8);
+  transition: filter 0.35s cubic-bezier(.77,0,.18,1);
+  pointer-events: none;
+}
+.blur-overlay.no-blur {
+  filter: none;
+  pointer-events: auto;
+}
+
 @media (max-width: 900px) {
   .navbar {
     padding: 18px 3vw;

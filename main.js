@@ -28,24 +28,27 @@ window.addEventListener('DOMContentLoaded', () => {
   // Hamburger menu toggle
   const hamburgerBtn = document.getElementById('hamburgerBtn');
   const mobileNav = document.getElementById('mobileNav');
-  if (hamburgerBtn && mobileNav) {
+  const mainContent = document.getElementById('mainContent');
+  if (hamburgerBtn && mobileNav && mainContent) {
     hamburgerBtn.addEventListener('click', () => {
       mobileNav.classList.toggle('active');
       hamburgerBtn.classList.toggle('active');
-      // Optionally lock scroll
       if (mobileNav.classList.contains('active')) {
+        mainContent.classList.remove('no-blur');
         document.body.style.overflow = 'hidden';
       } else {
+        mainContent.classList.add('no-blur');
         document.body.style.overflow = '';
       }
     });
   }
   // Close menu on link click (mobile UX)
-  if (mobileNav) {
+  if (mobileNav && mainContent) {
     mobileNav.querySelectorAll('a').forEach(link => {
       link.addEventListener('click', () => {
         mobileNav.classList.remove('active');
         hamburgerBtn.classList.remove('active');
+        mainContent.classList.add('no-blur');
         document.body.style.overflow = '';
       });
     });
