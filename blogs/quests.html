@@ -10,20 +10,28 @@
 </head>
 <body>
     <header class="navbar">
-        <div class="logo">
-            <img src="../Branding/logo/logo.png" alt="Dzovah Logo">
-            Dzovah
+        <div class="header-watermark-container">
+            <img src="../Branding/logo/dzovah.png" alt="Dzovah Watermark" class="header-watermark" />
         </div>
-        <nav>
+        <form class="search-bar" role="search">
+            <input type="text" placeholder="Search..." aria-label="Search" />
+            <button type="submit" aria-label="Submit search"><i class="fas fa-search"></i></button>
+        </form>
+        <button class="hamburger" id="hamburgerBtn" aria-label="Open menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav class="mobile-nav" id="mobileNav">
             <a href="../index.html#hero">Home</a>
             <a href="../index.html#about">About</a>
             <a href="../blog.html" class="active">Blog</a>
             <a href="../projects.html">Projects</a>
-            <a href="../index.html#contact">Contact</a>
             <a href="../index.html#community">Community</a>
+            <a href="../index.html#contact">Contact</a>
         </nav>
     </header>
-    <main>
+    <main id="mainContent" class="blur-overlay no-blur">
         <section class="blog">
             <h2>Choose Good Quests</h2>
             <div class="author">By Trae Stephens &amp; Markie Wagner</div>
@@ -83,5 +91,6 @@
     <footer class="footer" id="contact">
         <span>&copy; 2025 Dzovah. All rights reserved.</span>
     </footer>
+    <script src="../main.js"></script>
 </body>
 </html>
