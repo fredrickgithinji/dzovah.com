@@ -8,6 +8,51 @@
   <link href="https://fonts.googleapis.com/css?family=Segoe+UI:400,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <style>
+    .mobile-nav {
+      display: none;
+    }
+    @media only screen and (max-width: 768px) {
+      .desktop-nav {
+        display: none;
+      }
+      .mobile-nav {
+        display: block;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #fff;
+        width: 100%;
+        padding: 20px;
+        border-bottom: 1px solid #ddd;
+      }
+      .mobile-nav a {
+        display: block;
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+      }
+      .mobile-nav a:last-child {
+        border-bottom: none;
+      }
+      .hamburger {
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 20px;
+        background-color: #fff;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+      }
+      .hamburger span {
+        display: block;
+        width: 20px;
+        height: 2px;
+        background-color: #333;
+        margin-bottom: 5px;
+      }
+    }
+  </style>
 </head>
 <body>
   <header class="navbar">
@@ -15,11 +60,25 @@
       <img src="./Branding/logo/logo.png" alt="Dzovah Logo" style="height: 38px; vertical-align: middle; margin-right: 12px; border-radius: 7px; box-shadow: 0 2px 8px rgba(0,0,0,0.10); background: #fff2; padding: 2px 4px;">
       Dzovah
     </div>
-    <nav>
+    <nav class="mobile-nav" id="mobileNav">
       <a href="index.html#hero">Home</a>
       <a href="index.html#about">About</a>
       <a href="blog.html">Blog</a>
       <a href="projects.html">Projects</a>
+      <a href="#community">Community</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="hamburger" id="hamburgerBtn" aria-label="Open menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav class="desktop-nav">
+      <a href="index.html#hero">Home</a>
+      <a href="index.html#about">About</a>
+      <a href="blog.html">Blog</a>
+      <a href="projects.html">Projects</a>
+      <a href="#community">Community</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
@@ -51,6 +110,13 @@
     </section>
     <span>&copy; 2025 Dzovah. All rights reserved.</span>
   </footer>
+  <script>
+    const hamburgerBtn = document.getElementById('hamburgerBtn');
+    const mobileNav = document.getElementById('mobileNav');
+    hamburgerBtn.addEventListener('click', () => {
+      mobileNav.classList.toggle('open');
+    });
+  </script>
   <script src="main.js"></script>
 </body>
 </html>

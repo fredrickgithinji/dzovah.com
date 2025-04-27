@@ -221,6 +221,11 @@ section::after {
   min-height: 220px;
   overflow: visible !important;
 }
+.blog-card h3,
+.blog-card p,
+.blog-card .read-more {
+  text-decoration: none !important;
+}
 .blog-card h3 {
   margin-top: 0;
   margin-bottom: 1rem;
@@ -328,6 +333,72 @@ footer.footer span {
 @keyframes animate {
   from { filter: hue-rotate(0deg); }
   to { filter: hue-rotate(360deg); }
+}
+/* Hamburger styles */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1001;
+}
+.hamburger span {
+  display: block;
+  width: 26px;
+  height: 3px;
+  margin: 4px 0;
+  background: #fff;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+.mobile-nav {
+  display: none;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  background: #0B2035ee;
+  padding: 90px 0 32px 0;
+  z-index: 1000;
+  text-align: center;
+  gap: 2rem;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+}
+.mobile-nav a {
+  color: #fff;
+  font-size: 1.35rem;
+  font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+  text-decoration: none;
+  padding: 0.75rem 0;
+  display: block;
+  transition: color 0.2s;
+}
+.mobile-nav a:hover {
+  color: #774747;
+}
+.mobile-nav.active {
+  display: flex;
+}
+
+@media (max-width: 900px) {
+  .desktop-nav {
+    display: none;
+  }
+  .hamburger {
+    display: flex;
+  }
+}
+@media (min-width: 901px) {
+  .mobile-nav {
+    display: none !important;
+  }
 }
 @media (max-width: 900px) {
   .navbar {

@@ -24,4 +24,30 @@ window.addEventListener('DOMContentLoaded', () => {
       grid.appendChild(img);
     });
   }
+
+  // Hamburger menu toggle
+  const hamburgerBtn = document.getElementById('hamburgerBtn');
+  const mobileNav = document.getElementById('mobileNav');
+  if (hamburgerBtn && mobileNav) {
+    hamburgerBtn.addEventListener('click', () => {
+      mobileNav.classList.toggle('active');
+      hamburgerBtn.classList.toggle('active');
+      // Optionally lock scroll
+      if (mobileNav.classList.contains('active')) {
+        document.body.style.overflow = 'hidden';
+      } else {
+        document.body.style.overflow = '';
+      }
+    });
+  }
+  // Close menu on link click (mobile UX)
+  if (mobileNav) {
+    mobileNav.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileNav.classList.remove('active');
+        hamburgerBtn.classList.remove('active');
+        document.body.style.overflow = '';
+      });
+    });
+  }
 });
