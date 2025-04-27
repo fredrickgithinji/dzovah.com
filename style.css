@@ -71,7 +71,6 @@ body::after {
   box-shadow: 0 8px 32px rgba(11, 32, 53, 0.12);
   color: #fff;
   position: relative;
-  overflow: hidden;
 }
 .hero::after {
   content: '';
@@ -130,7 +129,6 @@ main {
 section {
   margin-bottom: 64px;
   position: relative;
-  overflow: hidden;
 }
 section::after {
   content: '';
@@ -151,13 +149,12 @@ section::after {
   gap: 24px;
 }
 .about, .projects, .blog, .community {
-  background: linear-gradient(135deg, #0B2035 0%, #0D364E 100%) !important;
+  background: linear-gradient(135deg, #0B2035 0%, #0D364E 100%);
   border-radius: 12px;
   padding: 40px 24px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.10);
   color: #fff;
   position: relative;
-  overflow: hidden;
 }
 .about::after, .projects::after, .blog::after, .community::after {
   content: '';
@@ -175,7 +172,6 @@ section::after {
   color: #fff;
   border: 1.5px solid rgba(255,255,255,0.10);
   position: relative;
-  overflow: hidden;
   transition: box-shadow 0.18s, transform 0.18s;
 }
 .card:hover {
@@ -188,6 +184,68 @@ section::after {
   top: 0; left: 0; right: 0; bottom: 0;
   background: rgba(11,32,53,0.25);
   pointer-events: none;
+}
+.blog-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin: 0;
+  overflow: visible !important;
+  padding-bottom: 1.5rem;
+  padding-top: 1.5rem;
+}
+.blog-list li {
+  flex: 1 1 350px;
+  max-width: 400px;
+  min-width: 260px;
+  margin: 0;
+}
+.blog-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+.blog-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: linear-gradient(135deg, #0B2035 0%, #0D364E 100%);
+  border-radius: 18px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.22), 0 1.5rem 3rem rgba(0,0,0,0.12);
+  padding: 2rem 1.5rem;
+  color: #fff;
+  border: 1.5px solid rgba(255,255,255,0.10);
+  transition: box-shadow 0.18s, transform 0.18s;
+  min-height: 220px;
+  overflow: visible !important;
+}
+.blog-card h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+  font-size: 1.35rem;
+  color: #fff;
+}
+.blog-card p {
+  margin-bottom: 0;
+  color: #C3C3C3;
+}
+.blog-card .read-more {
+  margin-top: 1.5rem;
+  color: #774747;
+  font-weight: bold;
+}
+.blog {
+  background: linear-gradient(135deg, #0B2035 0%, #0D364E 100%);
+  border-radius: 12px;
+  padding: 40px 24px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  color: #fff;
+  position: relative;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
 }
 footer.footer {
   width: 100vw;
