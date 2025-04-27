@@ -336,23 +336,27 @@ footer.footer span {
 }
 /* Hamburger styles */
 .hamburger {
-  display: none;
+  position: fixed;
+  top: 18px;
+  right: 18px;
+  left: auto;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 36px;
-  height: 36px;
-  background: none;
+  width: 40px;
+  height: 40px;
+  background: transparent;
   border: none;
   cursor: pointer;
-  z-index: 1001;
+  z-index: 2001;
 }
 .hamburger span {
   display: block;
-  width: 26px;
-  height: 3px;
+  width: 28px;
+  height: 4px;
   margin: 4px 0;
-  background: #fff;
+  background: linear-gradient(90deg, #0B2035 0%, #0D364E 100%);
   border-radius: 2px;
   transition: 0.3s;
 }
@@ -363,14 +367,24 @@ footer.footer span {
   position: fixed;
   top: 0;
   right: 0;
-  left: 0;
-  background: #0B2035ee;
-  padding: 90px 0 32px 0;
-  z-index: 1000;
+  bottom: 0;
+  width: 320px;
+  max-width: 90vw;
+  left: auto;
+  background: linear-gradient(135deg, #0B2035 0%, #0D364E 100%);
+  z-index: 2000;
+  padding: 120px 0 32px 0;
   text-align: center;
-  gap: 2rem;
-  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+  gap: 2.5rem;
+  box-shadow: -8px 0 32px rgba(0,0,0,0.18);
+  transform: translateX(100%);
+  transition: transform 0.35s cubic-bezier(.77,0,.18,1);
 }
+.mobile-nav.active {
+  display: flex;
+  transform: translateX(0);
+}
+
 .mobile-nav a {
   color: #fff;
   font-size: 1.35rem;
@@ -378,28 +392,16 @@ footer.footer span {
   text-decoration: none;
   padding: 0.75rem 0;
   display: block;
-  transition: color 0.2s;
+  border-radius: 8px;
+  margin: 0 2rem;
+  background: rgba(255,255,255,0.02);
+  transition: background 0.2s, color 0.2s;
 }
 .mobile-nav a:hover {
-  color: #774747;
-}
-.mobile-nav.active {
-  display: flex;
+  background: #181f2a;
+  color: #ffb6b6;
 }
 
-@media (max-width: 900px) {
-  .desktop-nav {
-    display: none;
-  }
-  .hamburger {
-    display: flex;
-  }
-}
-@media (min-width: 901px) {
-  .mobile-nav {
-    display: none !important;
-  }
-}
 @media (max-width: 900px) {
   .navbar {
     padding: 18px 3vw;

@@ -13,18 +13,15 @@
       display: none;
     }
     @media only screen and (max-width: 768px) {
-      .desktop-nav {
-        display: none;
-      }
       .mobile-nav {
         display: block;
         position: absolute;
         top: 60px;
-        left: 0;
+        right: 0;
         background-color: #fff;
-        width: 100%;
+        width: 250px;
         padding: 20px;
-        border-bottom: 1px solid #ddd;
+        border-left: 1px solid #ddd;
       }
       .mobile-nav a {
         display: block;
@@ -56,10 +53,6 @@
 </head>
 <body>
   <header class="navbar">
-    <div class="logo">
-      <img src="./Branding/logo/logo.png" alt="Dzovah Logo" style="height: 38px; vertical-align: middle; margin-right: 12px; border-radius: 7px; box-shadow: 0 2px 8px rgba(0,0,0,0.10); background: #fff2; padding: 2px 4px;">
-      Dzovah
-    </div>
     <nav class="mobile-nav" id="mobileNav">
       <a href="index.html#hero">Home</a>
       <a href="index.html#about">About</a>
@@ -73,14 +66,6 @@
       <span></span>
       <span></span>
     </button>
-    <nav class="desktop-nav">
-      <a href="index.html#hero">Home</a>
-      <a href="index.html#about">About</a>
-      <a href="blog.html">Blog</a>
-      <a href="projects.html">Projects</a>
-      <a href="#community">Community</a>
-      <a href="#contact">Contact</a>
-    </nav>
   </header>
   <main>
     <section id="hero" class="hero">
