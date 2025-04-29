@@ -549,3 +549,10 @@ footer.footer span {
   pointer-events: none;
   filter: drop-shadow(0 2px 8px rgba(11,32,53,0.10));
 }
+
+a, a:visited, a:active {
+  color: #fff !important;
+}
+a:hover {
+  color: #ffb6b6 !important;
+}
