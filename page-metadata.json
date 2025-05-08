@@ -1,0 +1,253 @@
+{
+  "global": {
+    "defaultDomain": "https://dzovah.com",
+    "defaultTitle": "Dzovah",
+    "defaultDescription": "Driving innovation by seamlessly integrating new ideas with the richness of what already exists.",
+    "defaultKeywords": "innovation, technology, integration",
+    "defaultImage": "/Branding/logo/logo001.png",
+    "socialMedia": {
+      "instagram": "https://instagram.com/dzovah._",
+      "twitter": "https://x.com/dzovah"
+    }
+  },
+  "pages": {
+    "index.html": {
+      "title": "Dzovah - Home",
+      "description": "Driving innovation by seamlessly integrating new ideas with the richness of what already exists.",
+      "keywords": "innovation, technology, integration, digital transformation",
+      "priority": "1.0",
+      "ogType": "website",
+      "schema": {
+        "@type": "Organization",
+        "name": "Dzovah",
+        "url": "https://dzovah.com",
+        "logo": "https://dzovah.com/Branding/logo/logo001.png",
+        "sameAs": [
+          "https://instagram.com/dzovah._",
+          "https://x.com/dzovah"
+        ]
+      }
+    },
+    "index-glowing.html": {
+      "title": "Dzovah - Glowing Social Media Icon",
+      "description": "Driving innovation by seamlessly integrating new ideas with the richness of what already exists.",
+      "keywords": "innovation, technology, integration",
+      "priority": "0.5",
+      "ogType": "website",
+      "schema": {
+        "@type": "Organization",
+        "name": "Dzovah",
+        "url": "https://dzovah.com",
+        "logo": "https://dzovah.com/Branding/logo/logo001.png",
+        "sameAs": [
+          "https://instagram.com/dzovah._",
+          "https://x.com/dzovah"
+        ]
+      }
+    },
+    "blog.html": {
+      "title": "Dzovah - Blog",
+      "description": "Driving innovation by seamlessly integrating new ideas with the richness of what already exists.",
+      "keywords": "innovation, technology, integration",
+      "priority": "0.5",
+      "ogType": "website",
+      "schema": {
+        "@type": "Organization",
+        "name": "Dzovah",
+        "url": "https://dzovah.com",
+        "logo": "https://dzovah.com/Branding/logo/logo001.png",
+        "sameAs": [
+          "https://instagram.com/dzovah._",
+          "https://x.com/dzovah"
+        ]
+      }
+    },
+    "blogs/career.html": {
+      "title": "Blog - Career",
+      "description": "Driving innovation by seamlessly integrating new ideas with the richness of what already exists.",
+      "keywords": "innovation, technology, integration",
+      "priority": "0.5",
+      "ogType": "article",
+      "schema": {
+        "@type": "Organization",
+        "name": "Dzovah",
+        "url": "https://dzovah.com",
+        "logo": "https://dzovah.com/Branding/logo/logo001.png",
+        "sameAs": [
+          "https://instagram.com/dzovah._",
+          "https://x.com/dzovah"
+        ]
+      }
+    },
+    "blogs/justpause.html": {
+      "title": "Blog - Just Pause",
+      "description": "Driving innovation by seamlessly integrating new ideas with the richness of what already exists.",
+      "keywords": "innovation, technology, integration",
+      "priority": "0.5",
+      "ogType": "article",
+      "schema": {
+        "@type": "Organization",
+        "name": "Dzovah",
+        "url": "https://dzovah.com",
+        "logo": "https://dzovah.com/Branding/logo/logo001.png",
+        "sameAs": [
+          "https://instagram.com/dzovah._",
+          "https://x.com/dzovah"
+        ]
+      }
+    },
+    "blogs/quests.html": {
+      "title": "Blog - Quests",
+      "description": "Driving innovation by seamlessly integrating new ideas with the richness of what already exists.",
+      "keywords": "innovation, technology, integration",
+      "priority": "0.5",
+      "ogType": "article",
+      "schema": {
+        "@type": "Organization",
+        "name": "Dzovah",
+        "url": "https://dzovah.com",
+        "logo": "https://dzovah.com/Branding/logo/logo001.png",
+        "sameAs": [
+          "https://instagram.com/dzovah._",
+          "https://x.com/dzovah"
+        ]
+      }
+    },
+    "community/ineed.html": {
+      "title": "Community - Needs",
+      "description": "Driving innovation by seamlessly integrating new ideas with the richness of what already exists.",
+      "keywords": "innovation, technology, integration",
+      "priority": "0.5",
+      "ogType": "website",
+      "schema": {
+        "@type": "Organization",
+        "name": "Dzovah",
+        "url": "https://dzovah.com",
+        "logo": "https://dzovah.com/Branding/logo/logo001.png",
+        "sameAs": [
+          "https://instagram.com/dzovah._",
+          "https://x.com/dzovah"
+        ]
+      }
+    },
+    "community/Signupcard.html": {
+      "title": "Community - Signup",
+      "description": "Driving innovation by seamlessly integrating new ideas with the richness of what already exists.",
+      "keywords": "innovation, technology, integration",
+      "priority": "0.5",
+      "ogType": "website",
+      "schema": {
+        "@type": "Organization",
+        "name": "Dzovah",
+        "url": "https://dzovah.com",
+        "logo": "https://dzovah.com/Branding/logo/logo001.png",
+        "sameAs": [
+          "https://instagram.com/dzovah._",
+          "https://x.com/dzovah"
+        ]
+      }
+    },
+    "projects.html": {
+      "title": "Dzovah Projects",
+      "description": "Driving innovation by seamlessly integrating new ideas with the richness of what already exists.",
+      "keywords": "innovation, technology, integration",
+      "priority": "0.5",
+      "ogType": "website",
+      "schema": {
+        "@type": "Organization",
+        "name": "Dzovah",
+        "url": "https://dzovah.com",
+        "logo": "https://dzovah.com/Branding/logo/logo001.png",
+        "sameAs": [
+          "https://instagram.com/dzovah._",
+          "https://x.com/dzovah"
+        ]
+      }
+    },
+    "projects/Mesha/Mesha.html": {
+      "title": "Mesha Project - Dzovah",
+      "description": "Driving innovation by seamlessly integrating new ideas with the richness of what already exists.",
+      "keywords": "innovation, technology, integration",
+      "priority": "0.5",
+      "ogType": "website",
+      "schema": {
+        "@type": "Organization",
+        "name": "Dzovah",
+        "url": "https://dzovah.com",
+        "logo": "https://dzovah.com/Branding/logo/logo001.png",
+        "sameAs": [
+          "https://instagram.com/dzovah._",
+          "https://x.com/dzovah"
+        ]
+      }
+    },
+    "projects/Mesha/Signupcard.html": {
+      "title": "Mesha Signup - Dzovah",
+      "description": "Driving innovation by seamlessly integrating new ideas with the richness of what already exists.",
+      "keywords": "innovation, technology, integration",
+      "priority": "0.5",
+      "ogType": "website",
+      "schema": {
+        "@type": "Organization",
+        "name": "Dzovah",
+        "url": "https://dzovah.com",
+        "logo": "https://dzovah.com/Branding/logo/logo001.png",
+        "sameAs": [
+          "https://instagram.com/dzovah._",
+          "https://x.com/dzovah"
+        ]
+      }
+    },
+    "search.html": {
+      "title": "Search - Dzovah",
+      "description": "Driving innovation by seamlessly integrating new ideas with the richness of what already exists.",
+      "keywords": "innovation, technology, integration",
+      "priority": "0.5",
+      "ogType": "website",
+      "schema": {
+        "@type": "Organization",
+        "name": "Dzovah",
+        "url": "https://dzovah.com",
+        "logo": "https://dzovah.com/Branding/logo/logo001.png",
+        "sameAs": [
+          "https://instagram.com/dzovah._",
+          "https://x.com/dzovah"
+        ]
+      }
+    },
+    "what/index.html": {
+      "title": "Dzovah",
+      "description": "Driving innovation by seamlessly integrating new ideas with the richness of what already exists.",
+      "keywords": "innovation, technology, integration",
+      "priority": "0.5",
+      "ogType": "website",
+      "schema": {
+        "@type": "Organization",
+        "name": "Dzovah",
+        "url": "https://dzovah.com",
+        "logo": "https://dzovah.com/Branding/logo/logo001.png",
+        "sameAs": [
+          "https://instagram.com/dzovah._",
+          "https://x.com/dzovah"
+        ]
+      }
+    },
+    "what/email.html": {
+      "title": "Contact Us - Dzovah",
+      "description": "Driving innovation by seamlessly integrating new ideas with the richness of what already exists.",
+      "keywords": "innovation, technology,.integration",
+      "priority": "0.5",
+      "ogType": "website",
+      "schema": {
+        "@type": "Organization",
+        "name": "Dzovah",
+        "url": "https://dzovah.com",
+        "logo": "https://dzovah.com/Branding/logo/logo001.png",
+        "sameAs": [
+          "https://instagram.com/dzovah._",
+          "https://x.com/dzovah"
+        ]
+      }
+    }
+  }
+}
