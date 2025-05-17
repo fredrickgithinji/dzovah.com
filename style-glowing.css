@@ -18,8 +18,8 @@
 
   #instagram,
   #twitter,
-  #github,
-  #whatsapp {
+  #github
+  {
     font-size: 8em;
     background-color: #18191f;
     color: #fff;
@@ -56,8 +56,8 @@
     }
     #instagram,
     #twitter,
-    #github,
-    #whatsapp {
+    #github
+    {
       font-size: 3em;
       margin: 12px 0;
       padding: 8px 10px;
@@ -67,8 +67,7 @@
   @media (max-width: 400px) {
     #instagram,
     #twitter,
-    #github,
-    #whatsapp {
+    #github {
       font-size: 2em;
       padding: 6px 6px;
     }
