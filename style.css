@@ -2,16 +2,17 @@
 body {
   position: relative;
   min-height: 100vh;
-  color: #C3C3C3;
+  color: #FFFFFF;
   font-family: 'Segoe UI', Arial, sans-serif;
   margin: 0;
+  background: #000000;
 }
 body::before {
   content: '';
   position: fixed;
   top: 0; left: 0; right: 0; bottom: 0;
   z-index: -2;
-  background: linear-gradient(135deg, #0B2035 0%, #0D364E 100%);
+  background: #000000;
 }
 body::after {
   content: '';
@@ -19,13 +20,13 @@ body::after {
   top: 0; left: 0; right: 0; bottom: 0;
   z-index: -1;
   background: url('./Branding/ref/t6.jpeg') center center/cover no-repeat;
-  opacity: 0.1;
+  opacity: 0.05;
   pointer-events: none;
 }
 .navbar {
   width: 100%;
   height: 64px;
-  background: linear-gradient(135deg, #0B2035 0%, #0D364E 100%);
+  background: #000000;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -35,8 +36,8 @@ body::after {
   gap: 1.2rem;
 }
 .logo {
-  font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
-  font-weight: bold;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  font-weight: 500;
   font-size: 1.7rem;
   color: #FFFFFF;
   letter-spacing: 2px;
@@ -53,15 +54,15 @@ body::after {
   display: inline-block;
 }
 .navbar nav a {
-  color: #C3C3C3;
+  color: #FFFFFF;
   margin-left: 2.5rem;
   text-decoration: none;
-  font-weight: 500;
-  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-family: 'Segoe UI', sans-serif;
   transition: color 0.2s;
 }
 .navbar nav a:hover {
-  color: #774747;
+  color: #CCCCCC;
 }
 .hamburger {
   position: relative;
@@ -86,16 +87,16 @@ body::after {
   width: 28px;
   height: 4px;
   margin: 4px 0;
-  background: linear-gradient(90deg, #0B2035 0%, #0D364E 100%);
+  background: #FFFFFF;
   border-radius: 2px;
   transition: 0.3s;
 }
 .hero {
   text-align: center;
   padding: 96px 16px 64px 16px;
-  background: linear-gradient(135deg, #0B2035 0%, #0D364E 100%) !important;
+  background: #000000 !important;
   border-radius: 0 0 24px 24px;
-  box-shadow: 0 8px 32px rgba(11, 32, 53, 0.12);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.12);
   color: #fff;
   position: relative;
 }
@@ -103,11 +104,12 @@ body::after {
   content: '';
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(11,32,53,0.25);
+  background: rgba(0,0,0,0.25);
   pointer-events: none;
 }
 .hero h1 {
-  font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  font-weight: 500;
   font-size: 3rem;
   color: #FFFFFF;
   margin-bottom: 1.2rem;
@@ -115,38 +117,37 @@ body::after {
 .hero .subtitle {
   font-size: 1.25rem;
   margin-bottom: 2.5rem;
-  color: #C3C3C3;
+  color: #FFFFFF;
 }
 button.primary {
-  background: linear-gradient(135deg, #0B2035 0%, #0D364E 100%);
-  color: #fff;
-  border-radius: 8px;
-  font-weight: bold;
+  background: #FFFFFF;
+  color: #000000;
+  border-radius: 4px;
+  font-weight: 500;
   border: none;
   padding: 16px 38px;
   font-size: 1.1rem;
   cursor: pointer;
   transition: background 0.2s, box-shadow 0.2s;
-  box-shadow: 0 2px 8px rgba(13,54,78,0.22);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.22);
 }
 button.primary:hover {
-  background: linear-gradient(135deg, #0D364E 0%, #0B2035 100%);
-  box-shadow: 0 4px 16px rgba(13,54,78,0.28);
+  background: #CCCCCC;
 }
 button.secondary {
   background: transparent;
-  color: #774747;
-  border: 2px solid #774747;
-  border-radius: 8px;
-  font-weight: bold;
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  border-radius: 4px;
+  font-weight: 500;
   padding: 12px 32px;
   font-size: 1rem;
   cursor: pointer;
   transition: background 0.2s, color 0.2s;
 }
 button.secondary:hover {
-  background: #774747;
-  color: #fff;
+  background: #FFFFFF;
+  color: #000000;
 }
 main {
   max-width: 1100px;
@@ -161,11 +162,12 @@ section::after {
   content: '';
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(11,32,53,0.25);
+  background: rgba(0,0,0,0.25);
   pointer-events: none;
 }
 .gallery h2, .about h2, .projects h2, .blog h2, .community h2 {
-  font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  font-weight: 500;
   color: #FFFFFF;
   margin-bottom: 1.5rem;
   font-size: 2rem;
@@ -176,8 +178,8 @@ section::after {
   gap: 24px;
 }
 .about, .projects, .blog, .community {
-  background: linear-gradient(135deg, #0B2035 0%, #0D364E 100%);
-  border-radius: 12px;
+  background: #000000;
+  border-radius: 4px;
   padding: 40px 24px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.10);
   color: #fff;
@@ -187,29 +189,29 @@ section::after {
   content: '';
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(11,32,53,0.13);
+  background: rgba(0,0,0,0.13);
   pointer-events: none;
 }
 .card {
-  background: linear-gradient(135deg, #0B2035 0%, #0D364E 100%);
-  border-radius: 18px;
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.22), 0 1.5rem 3rem rgba(0,0,0,0.12);
+  background: #000000;
+  border-radius: 4px;
+  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.22);
   padding: 42px 36px 38px 36px;
   margin: 36px 0;
   color: #fff;
-  border: 1.5px solid rgba(255,255,255,0.10);
+  border: 1px solid rgba(255,255,255,0.10);
   position: relative;
   transition: box-shadow 0.18s, transform 0.18s;
 }
 .card:hover {
-  box-shadow: 0 16px 48px 0 rgba(31, 38, 135, 0.28), 0 2.5rem 5rem rgba(0,0,0,0.16);
-  transform: translateY(-6px) scale(1.025);
+  box-shadow: 0 16px 48px 0 rgba(0,0,0,0.28);
+  transform: translateY(-6px);
 }
 .card::after {
   content: '';
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(11,32,53,0.25);
+  background: rgba(0,0,0,0.25);
   pointer-events: none;
 }
 .blog-list {
@@ -238,12 +240,12 @@ section::after {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background: linear-gradient(135deg, #0B2035 0%, #0D364E 100%);
-  border-radius: 18px;
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.22), 0 1.5rem 3rem rgba(0,0,0,0.12);
+  background: #000000;
+  border-radius: 4px;
+  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.22);
   padding: 2rem 1.5rem;
   color: #fff;
-  border: 1.5px solid rgba(255,255,255,0.10);
+  border: 1px solid rgba(255,255,255,0.10);
   transition: box-shadow 0.18s, transform 0.18s;
   min-height: 220px;
   overflow: visible !important;
@@ -256,28 +258,26 @@ section::after {
 .blog-card h3 {
   margin-top: 0;
   margin-bottom: 1rem;
-  font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+  font-family: 'Segoe UI', Arial, sans-serif;
   font-size: 1.35rem;
   color: #fff;
 }
 .blog-card p {
   margin-bottom: 0;
-  color: #C3C3C3;
+  color: #FFFFFF;
 }
 .blog-card .read-more {
   margin-top: 1.5rem;
-  color: #774747;
-  font-weight: bold;
+  color: #FFFFFF;
+  font-weight: 500;
 }
 .blog {
-  background: linear-gradient(135deg, #0B2035 0%, #0D364E 100%);
-  border-radius: 12px;
+  background: #000000;
+  border-radius: 4px;
   padding: 40px 24px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.10);
   color: #fff;
   position: relative;
-  padding-bottom: 2rem;
-  padding-top: 2rem;
 }
 footer.footer {
   width: 100vw;
@@ -295,7 +295,7 @@ footer.footer span {
   text-align: center;
   width: 100%;
   margin: 0 auto 10px auto;
-  color: #aaa;
+  color: #FFFFFF;
   font-size: 1rem;
 }
 .contact {
@@ -339,18 +339,15 @@ footer.footer span {
 #github,
 #facebook {
   font-size: 4em;
-  background-color: #18191f;
+  background-color: #000000;
   color: #fff;
-  box-shadow: 2px 2px 2px #00000080, 10px 1px 12px #00000080,
-    2px 2px 10px #00000080, 2px 2px 3px #00000080, inset 2px 2px 10px #00000080,
-    inset 2px 2px 10px #00000080, inset 2px 2px 10px #00000080,
-    inset 2px 2px 10px #00000080;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  border: 1px solid rgba(255,255,255,0.1);
+  text-shadow: none;
   border-radius: 29px;
   padding: 11px 19px;
   margin: 0 24px;
   animation: animate 3s linear infinite;
-  text-shadow: 0 0 50px #0072ff, 0 0 100px #0072ff, 0 0 150px #0072ff,
-    0 0 200px #0072ff;
   transition: transform 0.3s;
   display: inline-block;
 }
@@ -358,8 +355,8 @@ footer.footer span {
 #facebook { animation-delay: 0.7s; }
 #github { animation-delay: 0.1s; }
 @keyframes animate {
-  from { filter: hue-rotate(0deg); }
-  to { filter: hue-rotate(360deg); }
+  from { filter: none; }
+  to { filter: none; }
 }
 .mobile-nav {
   display: none;
@@ -371,7 +368,7 @@ footer.footer span {
   width: 320px;
   max-width: 90vw;
   left: auto;
-  background: linear-gradient(135deg, #0B2035 0%, #0D364E 100%);
+  background: #000000;
   z-index: 2000;
   padding: 120px 0 32px 0;
   text-align: center;
@@ -392,7 +389,7 @@ footer.footer span {
 .mobile-nav a {
   color: #fff;
   font-size: 1.35rem;
-  font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+  font-family: 'Segoe UI', Arial, sans-serif;
   text-decoration: none;
   padding: 0.75rem 0;
   display: block;
@@ -402,8 +399,8 @@ footer.footer span {
   transition: background 0.2s, color 0.2s;
 }
 .mobile-nav a:hover {
-  background: #181f2a;
-  color: #ffb6b6;
+  background: #FFFFFF;
+  color: #000000;
 }
 
 /* Blur effect for main content when mobile nav is active */
@@ -468,15 +465,15 @@ footer.footer span {
   align-items: center;
   justify-content: center;
   margin: 0 auto;
-  background: linear-gradient(135deg, #0B2035cc 0%, #0D364Ecc 100%);
+  background: rgba(0,0,0,0.8);
   border-radius: 32px;
-  box-shadow: 0 2px 18px 0 rgba(11,32,53,0.18);
+  box-shadow: 0 2px 18px 0 rgba(0,0,0,0.18);
   padding: 0 8px 0 18px;
   height: 44px;
   position: relative;
   backdrop-filter: blur(12px) saturate(160%);
   -webkit-backdrop-filter: blur(12px) saturate(160%);
-  border: 1.5px solid rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(255,255,255,0.1);
   outline: none;
 }
 
@@ -486,14 +483,14 @@ footer.footer span {
   outline: none;
   background: transparent;
   font-size: 1.1rem;
-  font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+  font-family: 'Segoe UI', Arial, sans-serif;
   padding: 0 8px 0 0;
   height: 40px;
   color: #fff;
 }
 .search-bar input[type="text"]::placeholder {
-  color: #e0e6f3;
-  opacity: 1;
+  color: #FFFFFF;
+  opacity: 0.5;
 }
 .search-bar button {
   background: none;
@@ -509,7 +506,7 @@ footer.footer span {
 }
 .search-bar button:active,
 .search-bar button:focus {
-  color: #ffb6b6;
+  color: #CCCCCC;
 }
 
 @media (max-width: 700px) {
@@ -547,12 +544,12 @@ footer.footer span {
   -webkit-user-select: none;
   user-select: none;
   pointer-events: none;
-  filter: drop-shadow(0 2px 8px rgba(11,32,53,0.10));
+  filter: drop-shadow(0 2px 8px rgba(0,0,0,0.10));
 }
 
 a, a:visited, a:active {
   color: #fff !important;
 }
 a:hover {
-  color: #ffb6b6 !important;
+  color: #CCCCCC !important;
 }
